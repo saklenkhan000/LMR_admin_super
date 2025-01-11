@@ -2,6 +2,18 @@ buildscript {
     ext.kotlin_version = '1.9.20'
 
 //    ext.kotlin_version = '1.8.0' // You can update this version as needed
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+//        classpath "com.android.tools.build:gradle:8.2.0-beta01" // Or the latest version available
+        classpath "com.android.tools.build:gradle:8.1.0"  // Use the latest stable version
+
+//        classpath "com.android.tools.build:gradle:8.1.0" // Use a compatible Gradle Plugin version
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
 
 }
 allprojects {
@@ -10,6 +22,7 @@ allprojects {
         mavenCentral()
     }
 }
+
 
 rootProject.buildDir = "../build"
 subprojects {
@@ -22,7 +35,3 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
-//dependencies {
-//    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-//    classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version" // Add Kotlin Serialization plugin
-//}

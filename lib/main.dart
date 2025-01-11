@@ -18,7 +18,7 @@ final navigatorKey = GlobalKey<NavigatorState>();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // setPathUrlStrategy();
+  setPathUrlStrategy();
   VPlatformFileUtils.baseMediaUrl = SConstants.baseMediaUrl;
   await VAppPref.init();
   _inject();
