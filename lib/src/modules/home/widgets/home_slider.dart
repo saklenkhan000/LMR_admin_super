@@ -11,6 +11,8 @@ import 'package:s_translation/generated/l10n.dart';
 import 'package:sidebarx/sidebarx.dart';
 import 'package:super_up_admin/src/modules/home/widgets/sheet_for_choose_language.dart';
 import 'package:super_up_admin/src/modules/home/widgets/slider_colors.dart';
+// import 'package:super_up_admin/src/modules/home/widgets/sheet_for_choose_language.dart';
+// import 'package:super_up_admin/src/modules/home/widgets/slider_colors.dart';
 import 'package:super_up_core/super_up_core.dart';
 
 import '../../splash.dart';

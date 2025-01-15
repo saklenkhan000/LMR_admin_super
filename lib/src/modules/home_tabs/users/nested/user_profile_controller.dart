@@ -6,9 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:s_translation/generated/l10n.dart';
 import 'package:super_up_admin/main.dart';
-import 'package:super_up_admin/src/core/api_service/api_service.dart';
+// import 'package:super_up_admin/main.dart';
+// import 'package:super_up_admin/src/core/api_service/api_service.dart';
 import 'package:super_up_core/super_up_core.dart';
 
+import '../../../../core/api_service/api_service.dart';
 import '../../../../core/models/dash_user/peer_user_info.dart';
 
 class InfoTile {

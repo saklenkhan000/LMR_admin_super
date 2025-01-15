@@ -6,10 +6,11 @@ import 'package:adaptive_dialog/adaptive_dialog.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get_it/get_it.dart';
 import 'package:s_translation/generated/l10n.dart';
-import 'package:super_up_admin/src/core/api_service/s_admin/s_admin_api_service.dart';
+// import 'package:super_up_admin/src/core/api_service/s_admin/s_admin_api_service.dart';
 import 'package:super_up_core/super_up_core.dart';
 
 import '../../../../main.dart';
+import '../../../core/api_service/api_service.dart';
 
 class SettingsController extends SLoadingController<AppConfigModel> {
   SettingsController() : super(SLoadingState(AppConfigModel.init()));

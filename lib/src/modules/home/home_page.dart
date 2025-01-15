@@ -4,9 +4,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:super_up_admin/src/modules/home/widgets/home_slider.dart';
-import 'package:super_up_admin/src/modules/home_tabs/notifications/notifications_page.dart';
+// import 'package:super_up_admin/src/modules/home/widgets/home_slider.dart';
+// import 'package:super_up_admin/src/modules/home_tabs/notifications/notifications_page.dart';
 
 import '../home_tabs/dashboard/dashboard_page.dart';
+import '../home_tabs/notifications/notifications_page.dart';
 import '../home_tabs/settings/settings_page.dart';
 import '../home_tabs/users/users_page.dart';
 import 'home_controller.dart';

@@ -8,6 +8,8 @@ import 'package:get_it/get_it.dart';
 import 'package:s_translation/generated/l10n.dart';
 import 'package:super_up_admin/src/core/api_service/api_service.dart';
 import 'package:super_up_admin/src/modules/splash.dart';
+// import 'package:super_up_admin/src/core/api_service/api_service.dart';
+// import 'package:super_up_admin/src/modules/splash.dart';
 import 'package:super_up_core/super_up_core.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'package:v_platform/v_platform.dart';
@@ -40,7 +42,7 @@ class MyApp extends StatelessWidget {
             home: const Splash(),
             theme: ThemeData(
               useMaterial3: true,
-              colorScheme: lightColorScheme,
+              colorScheme: darkColorScheme,
               cupertinoOverrideTheme: const CupertinoThemeData(
                 brightness: Brightness.light,
                 textTheme: CupertinoTextThemeData(
@@ -65,10 +67,9 @@ class MyApp extends StatelessWidget {
                   textStyle: TextStyle(color: Colors.white),
                 ),
               ),
-            ),
-                // .copyWith(
-                // // textTheme: GoogleFonts.robotoSerifTextTheme().copyWith(),
-                // ),
+            ).copyWith(
+                // textTheme: GoogleFonts.robotoSerifTextTheme().copyWith(),
+                ),
             themeMode: themeMode,
             locale: locale,
             supportedLocales: S.delegate.supportedLocales,
